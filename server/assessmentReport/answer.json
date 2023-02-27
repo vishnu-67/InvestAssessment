@@ -1,0 +1,1088 @@
+[
+    {
+        "emailId": "Test@gmail.com",
+        "totalMark": 43,
+        "userGetMark": 3,
+        "ansSheet": [
+            {
+                "id": 1,
+                "header": "Market Opportunity - Value Proposition (Total score: 5)",
+                "subHeader": "Strong value proposition addressing an ignored need with quantified business/financial gains, backed with proven willingness-to-buy, (FIR = 100)",
+                "getMark": 1,
+                "sessionContent": [
+                    {
+                        "qn_id": 1,
+                        "qn": "Does the value proposition address an ignored need? (Score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": 2
+                    },
+                    {
+                        "qn_id": 2,
+                        "qn": "Is there quantified business/financial gain for addressing this need? (Score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": 3
+                    },
+                    {
+                        "qn_id": 3,
+                        "qn": "Is there evidence of a willingness-to-buy for this proposition? (Score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": 1
+                    },
+                    {
+                        "qn_id": 4,
+                        "qn": "Is the value proposition backed by proven research or data? (Score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": 2
+                    },
+                    {
+                        "qn_id": 5,
+                        "qn": "Is the Financial Impact Ratio (FIR) 100? (Score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    }
+                ],
+                "sessionScore": 5
+            },
+            {
+                "id": 2,
+                "header": "Market Opportunity - TAM Size & Growth (Total score: 7)",
+                "subHeader": "Potential to emerge as a substantially large domestic and global market with a market value in excess of $10 Bi per annum within the next 5 years",
+                "getMark": 0,
+                "sessionContent": [
+                    {
+                        "qn_id": 1,
+                        "qn": "Is there evidence of a growing demand for the product/service within the target market? (score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    },
+                    {
+                        "qn_id": 2,
+                        "qn": "Are there any potential barriers to entry for new competitors in the market? (score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    },
+                    {
+                        "qn_id": 3,
+                        "qn": "Is there a large and expanding pool of potential customers for the product/service? (score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    },
+                    {
+                        "qn_id": 4,
+                        "qn": "Is the target market projected to grow significantly in the next 5 years? (score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    },
+                    {
+                        "qn_id": 5,
+                        "qn": "Is there a trend towards increased spending on the product/service by customers? (score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    },
+                    {
+                        "qn_id": 6,
+                        "qn": "Are there any disruptive technologies or changes in consumer behavior that could negatively impact the market growth? (score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    },
+                    {
+                        "qn_id": 7,
+                        "qn": "Are there any government regulations or policies that could restrict the growth of the market? (score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    }
+                ],
+                "sessionScore": 7
+            },
+            {
+                "id": 3,
+                "header": "Market Opportunity - Market Readiness (Total score: 4)",
+                "subHeader": "How mature is the market with enabling infrastructure/resources to scale up rapid adoption, distribution, and GTM operations of industrial digital technologies?",
+                "getMark": 0,
+                "sessionContent": [
+                    {
+                        "qn_id": 1,
+                        "qn": "Is there a well-established infrastructure for the distribution and adoption of industrial digital technologies in the market? (score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    },
+                    {
+                        "qn_id": 2,
+                        "qn": "Are there adequate resources available for the effective deployment and integration of industrial digital technologies? (score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    },
+                    {
+                        "qn_id": 3,
+                        "qn": "Are there established partnerships with key players in the market to facilitate the rapid adoption and distribution of industrial digital technologies? (score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    },
+                    {
+                        "qn_id": 4,
+                        "qn": "Is there a strong demand for industrial digital technologies in the market, indicating market readiness? (score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    }
+                ],
+                "sessionScore": 4
+            },
+            {
+                "id": 4,
+                "header": "Market Opportunity - Attractiveness for Venturing (Total score - 4)",
+                "subHeader": "Lower risks of regulation, entry barriers, external macroeconomic threats, sales revenue cycle, adoption barriers for technology/ innovation etc.",
+                "getMark": 0,
+                "sessionContent": [
+                    {
+                        "qn_id": 1,
+                        "qn": "Is the regulatory environment for the market favorable for new ventures? (score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    },
+                    {
+                        "qn_id": 2,
+                        "qn": "Are there low barriers to entry for new ventures in the market?(Score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    },
+                    {
+                        "qn_id": 3,
+                        "qn": "Are there minimal external macroeconomic threats that could negatively impact the market for new ventures? (score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    },
+                    {
+                        "qn_id": 4,
+                        "qn": "Are there low adoption barriers for new technology and innovation in the market? (score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    }
+                ],
+                "sessionScore": 4
+            },
+            {
+                "id": 5,
+                "header": "Technology Advantages - Breakthrough Tech (Total score - 5)",
+                "subHeader": "A fundamental scientific discovery/invention translated into a potentially disruptive technology capable of emerging as the Dominant Standard for industrial-grade applications across multiple sectors/use-cases",
+                "getMark": 0,
+                "sessionContent": [
+                    {
+                        "qn_id": 1,
+                        "qn": "Does the technology have the potential to disrupt existing market offerings and emerge as the dominant standard for industrial-grade applications? (score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    },
+                    {
+                        "qn_id": 2,
+                        "qn": "Is the technology based on a fundamental scientific discovery or invention? (score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    },
+                    {
+                        "qn_id": 3,
+                        "qn": "Does the technology have the potential to be applied across multiple sectors and use-cases in the market? (score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    },
+                    {
+                        "qn_id": 4,
+                        "qn": "Is the technology significantly superior to existing offerings in terms of functionality, performance, or cost-effectiveness? (score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    },
+                    {
+                        "qn_id": 5,
+                        "qn": "Has the technology undergone significant validation and testing, demonstrating its technical feasibility and market viability? (score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    }
+                ],
+                "sessionScore": 5
+            },
+            {
+                "id": 6,
+                "header": "Technology Advantages - Generic Core-Product (Total score - 3)",
+                "subHeader": "A strongly differentiated technology likely to emerge as the most widely adopted industrial-grade subsystem (core-product) that powers several end-product solutions across use-cases and categories",
+                "getMark": 0,
+                "sessionContent": [
+                    {
+                        "qn_id": 1,
+                        "qn": "Does the technology have the potential to emerge as the most widely adopted industrial-grade subsystem (core-product) for end-product solutions? (score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    },
+                    {
+                        "qn_id": 2,
+                        "qn": "Is the technology strongly differentiated from existing offerings in the market? (score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    },
+                    {
+                        "qn_id": 3,
+                        "qn": "Does the technology have the potential to power several end-product solutions across multiple use-cases and categories? (score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    }
+                ],
+                "sessionScore": 3
+            },
+            {
+                "id": 7,
+                "header": "Technology Advantages - Opportunity for IP Licensing (Total score - 3)",
+                "subHeader": "Novel technology with strong IP potential, capable of being monetized through IP (technology) licensing deals",
+                "getMark": 1,
+                "sessionContent": [
+                    {
+                        "qn_id": 1,
+                        "qn": "Is the technology novel and innovative? (score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    },
+                    {
+                        "qn_id": 2,
+                        "qn": "Does the technology have strong IP potential? (score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": 2
+                    },
+                    {
+                        "qn_id": 3,
+                        "qn": "Is the technology capable of being monetized through IP licensing deals? (score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": 1
+                    }
+                ],
+                "sessionScore": 3
+            },
+            {
+                "id": 8,
+                "header": "Technology Advantages - Disruptive Potential (Total score - 3)",
+                "subHeader": "Highly likely to impact the fundamental business model around industrial digital transformation, in the same way ICT/Mobile tech and Cloud Computing tech impacted digital transformation in consumer and enterprise markets",
+                "getMark": 1,
+                "sessionContent": [
+                    {
+                        "qn_id": 1,
+                        "qn": "Is the technology likely to impact the fundamental business model around industrial digital transformation? (score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    },
+                    {
+                        "qn_id": 2,
+                        "qn": "Does the technology have the potential to be as disruptive as ICT/Mobile tech and Cloud Computing tech? (score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    },
+                    {
+                        "qn_id": 3,
+                        "qn": "Is the technology capable of transforming the consumer and enterprise markets in the same way ICT/Mobile tech and Cloud Computing tech have? (score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": 2
+                    },
+                    {
+                        "qn_id": 4,
+                        "qn": "Is the technology capable of leading to a new era of industrial digital transformation? (score: 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": 1
+                    }
+                ],
+                "sessionScore": 4
+            },
+            {
+                "id": 9,
+                "header": "Team & Capabilities - Tech/Domain Expertise (Total score - 3)",
+                "subHeader": "Founders are involved full-time, with capable technical and operations team capable of commercializing the innovation, guided by eminent advisors",
+                "getMark": 0,
+                "sessionContent": [
+                    {
+                        "qn_id": 1,
+                        "qn": "Do the founders have prior experience in the technology or industry domain related to the innovation? (score 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    },
+                    {
+                        "qn_id": 2,
+                        "qn": "Does the team have a track record of successfully commercializing similar technologies or innovations? (score 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": 3
+                    },
+                    {
+                        "qn_id": 3,
+                        "qn": "Are the founders and core team members fully committed to the venture and working on it full-time? (score 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    }
+                ],
+                "sessionScore": 3
+            },
+            {
+                "id": 10,
+                "header": "Team & Capabilities - Founder-Market Fit (Total score - 5)",
+                "subHeader": "Visionary entrepreneur with the leadership and company building skills, with the ambition to emerge as the category leader, backed by strong execution skills vital for achieving success in the chosen target market",
+                "getMark": 0,
+                "sessionContent": [
+                    {
+                        "qn_id": 1,
+                        "qn": "Does the founder have a clear vision for the company and its place in the target market? (score 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    },
+                    {
+                        "qn_id": 2,
+                        "qn": "Does the founder have a track record of successfully starting and building companies in the past? (score 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": 3
+                    },
+                    {
+                        "qn_id": 3,
+                        "qn": "Does the founder have the necessary leadership skills to guide the company through challenges and ensure its success? (score 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    },
+                    {
+                        "qn_id": 4,
+                        "qn": "Does the founder have the necessary business acumen and execution skills to drive the company towards its goals? (score 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    },
+                    {
+                        "qn_id": 5,
+                        "qn": "Does the founder have a strong network and relationships in the target market that can help drive the company's success? (score 1)",
+                        "score": 1,
+                        "options": [
+                            {
+                                "lable": "Yes",
+                                "value": 1,
+                                "optionId": 1
+                            },
+                            {
+                                "lable": "No",
+                                "value": 0,
+                                "optionId": 2
+                            },
+                            {
+                                "lable": "Need more info",
+                                "value": 0,
+                                "optionId": 3
+                            }
+                        ],
+                        "isSelectOption": ""
+                    }
+                ],
+                "sessionScore": 5
+            }
+        ]
+    }
+]

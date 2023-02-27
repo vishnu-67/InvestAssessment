@@ -1,0 +1,87 @@
+<div id="login" class="inner-scroll" fxLayout="row" fxLayoutAlign="start">
+    <div id="login-intro" fxFlex fxHide fxShow.gt-xs>
+        <div class="logo" [@animate]="{ value: '*', params: { scale: '0.2' } }">
+            <!-- <img src="../../../assets/images/logos/candidhire_logo.svg" /> -->
+        </div>
+
+        <div
+            class="title"
+            [@animate]="{ value: '*', params: { delay: '50ms', y: '25px' } }"
+        >
+            Investment Assessment
+        </div>
+
+        <!-- <div
+            class="description"
+            [@animate]="{ value: '*', params: { delay: '100ms', y: '25px' } }"
+        >
+            {{ "AUTHENTICATION.WELCOME_MESSAGE" | translate }}
+        </div> -->
+    </div>
+
+    <div
+        id="login-form-wrapper"
+        fusePerfectScrollbar
+        [@animate]="{ value: '*', params: { delay: '300ms', x: '100%' } }"
+    >
+        <div id="login-form">
+            <div class="logo mt-0" fxHide.gt-xs>
+                <img src="../../../assets/images/logos/logo.svg" />
+            </div>
+
+            <div class="title" fxLayoutAlign="center center">
+                Login To User
+            </div>
+
+            <form name="loginForm"
+            [formGroup]="loginForm"
+            novalidate
+            (ngSubmit)="onLogin()">
+                <mat-form-field appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input
+                        matInput
+                        name="email"
+                        formControlName="email"
+                        required
+                        autofocus
+                    />
+                    <mat-icon matSuffix class="secondary-text">mail</mat-icon>
+                    <mat-error
+                        *ngIf="loginForm.get('email').hasError('required')"
+                    >
+                    Email id required
+                    </mat-error>
+                    <mat-error
+                        *ngIf="
+                            !loginForm.get('email').hasError('required') &&
+                            loginForm.get('email').hasError('pattern')
+                        "
+                    >
+                    Enter a valid Email
+                    </mat-error>
+                </mat-form-field>
+                <!-- <div>
+                    <re-captcha
+                        formControlName="reCaptcha"
+                        required
+                        (resolved)="OnReCaptchaResolved($event)"
+                        siteKey="{{ captchaSiteKey }}"
+                    >
+                    </re-captcha>
+                </div> -->
+
+                <button
+                    mat-raised-button
+                    color="accent"
+                    class="submit-button"
+                    aria-label="LOGIN"
+                    [disabled]="loginForm.invalid"
+                >
+                    LOGIN
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+

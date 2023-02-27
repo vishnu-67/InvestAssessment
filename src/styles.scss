@@ -1,0 +1,251 @@
+// Import Fuse core library
+@import "@fuse/scss/core";
+
+// Import app.theme.scss
+@import "app/app.theme";
+
+.mat-tab-label,
+.mat-tab-link {
+    font-size: 16px;
+}
+.mat-tab-label {
+    padding: 0 10px !important;
+    margin: 0 24px;
+    min-width: 80px !important;
+    height: 28px !important;
+}
+.fuse-pointer {
+    cursor: pointer;
+}
+.custom-dropdown {
+    // width: 80%;
+    padding: 5px;
+    border: 1px solid #9c9c9c;
+    border-radius: 5px;
+    // color: #22ca98;
+    font-weight: initial;
+}
+.inner-tab-group
+    > .mat-tab-header
+    .mat-tab-label-container
+    .mat-tab-label-active {
+    // height: 40px;
+    // background: #22ca98;
+    opacity: 1;
+    color: #22ca98;
+    border-bottom: 2px solid #22ca98;
+    // color: #fff;
+}
+
+.inner-tab-group > .mat-tab-header .mat-tab-label-container .mat-ink-bar,
+.mat-ink-bar {
+    // background-color: #22ca98 !important;
+    display: none;
+}
+.inner-tab-group > .mat-tab-header .mat-tab-label-container {
+    padding-top: 20px;
+}
+.mgl-timeline .mgl-timeline-line {
+    width: 5px;
+}
+.mgl-timeline.mobile .mgl-timeline-line {
+    left: 25px;
+}
+
+body.theme-default
+    .userrole
+    .mat-form-field-appearance-outline
+    .mat-form-field-outline-thick {
+    color: rgb(34, 202, 152);
+}
+body.theme-default
+    .userrole
+    .mat-form-field-appearance-outline
+    .mat-form-field-outline {
+    color: rgb(55, 214, 167);
+    background-color: white;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+.mat-menu-panel {
+    min-width: 170px !important;
+}
+body.theme-default .mat-error {
+    color: #f44336;
+    font-size: 14px;
+}
+body.theme-default .mat-step-header.cdk-keyboard-focused,
+body.theme-default .mat-step-header.cdk-program-focused,
+body.theme-default .mat-step-header:hover {
+    background-color: transparent;
+}
+body.theme-default .mat-step-header .mat-step-label.mat-step-label-active {
+    color: rgb(34, 202, 152);
+}
+body.theme-default .mat-toolbar {
+    background: white;
+}
+
+@media (max-width: 599px) {
+    .mat-toolbar-multiple-rows {
+        min-height: 90px !important;
+        flex-direction: column;
+    }
+    .mat-toolbar-row,
+    .mat-toolbar-single-row {
+        height: 100px;
+        flex-direction: column;
+    }
+}
+footer .mat-toolbar-row,
+footer .mat-toolbar-single-row {
+    height: 45px !important;
+}
+.mat-slide-toggle-content {
+    overflow: visible !important;
+}
+
+.multiselect-dropdown .dropdown-btn {
+    margin-bottom: 20px !important;
+    min-height: 60px;
+    border: 1px solid #2cd8a5 !important;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Muli;
+    padding: 15px 12px 5px !important;
+    line-height: 2 !important;
+}
+.multiselect-dropdown .dropdown-btn .dropdown-down {
+    border-top: 5px solid #757575 !important;
+    border-left: 5px solid transparent !important;
+    border-right: 5px solid transparent !important;
+}
+
+.multiselect-dropdown .dropdown-btn .dropdown-up {
+    border-bottom: 5px solid #757575 !important;
+    border-left: 5px solid transparent !important;
+    border-right: 5px solid transparent !important;
+}
+.multiselect-dropdown .dropdown-list {
+    margin-top: -16px !important;
+}
+.mat-slider-thumb {
+    background-color: #22ca98 !important;
+}
+
+.mat-slider-thumb-label {
+    transform: rotate(45deg) !important;
+    border-radius: 50% 50% 0 !important;
+}
+
+.mat-slider-thumb {
+    transform: scale(0) !important;
+}
+
+.mat-slider-thumb-label-text {
+    opacity: 1 !important;
+}
+
+mat-form-field .mat-form-field {
+    // &-underline {
+    //   position: relative;
+    //   bottom: auto;
+    // }
+    &-subscript-wrapper {
+        position: static;
+    }
+}
+
+.mat-slider-horizontal {
+    height: 48px;
+    min-width: 115px;
+}
+
+// input[readonly] {
+//     cursor: not-allowed;
+//   }
+
+.mat-tab-label-active {
+    font-weight: bold;
+    opacity: 1 !important;
+    border-bottom: 2px solid;
+}
+
+mat-paginator .mat-form-field-appearance-legacy .mat-form-field-wrapper {
+    padding-bottom: 0.9em;
+}
+mat-paginator .mat-paginator-page-size-select {
+    width: 45px;
+}
+mat-paginator
+    .mat-form-field.mat-form-field-type-mat-select
+    .mat-form-field-infix
+    .mat-select-trigger
+    .mat-select-value {
+    margin-right: 0;
+    margin-left: 5px;
+}
+mat-paginator
+    .mat-form-field.mat-form-field-type-mat-select
+    .mat-form-field-infix {
+    padding-bottom: 3px;
+}
+.commaseparator::after {
+    content: ",";
+}
+
+.commaseparator:last-child::after {
+    content: "";
+}
+
+.link,
+body.theme-default a {
+    cursor: pointer;
+}
+.updateats .mat-form-field-wrapper {
+    padding-bottom: 0;
+}
+.mat-sort-header-button {
+    text-align: left;
+}
+.break-word {
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+.primarycls {
+    width: 100%;
+    float: left;
+}
+body.theme-default .mat-raised-button.primary-bg[disabled] {
+    background-color: rgba(0, 0, 0, 0.12) !important;
+    color: rgba(0, 0, 0, 0.26);
+}
+
+.mat-step-header.mat-horizontal-stepper-header {
+    pointer-events: none !important;
+}
+
+::ng-deep .mat-sort-header-arrow {
+    color: #fff;
+}
+
+body.theme-default .mat-sort-header-arrow {color: #fff;
+}
+
+.mat-tooltip.tooltip-red {
+    background-color: red !important;
+    font-size: 14px !important;
+  }
+
+.mat-tooltip.tooltip-blue {
+    background-color: rgb(192, 57, 158) !important;
+    font-size: 14px !important;
+    
+  }
