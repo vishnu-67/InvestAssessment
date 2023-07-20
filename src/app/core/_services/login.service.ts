@@ -16,6 +16,31 @@ export class LoginService {
         return this.http.post<Response>(environment.baseAPIUrl + '/user/adminLogin', pdata);
     }
 
+    registor(pdata:any):Observable<Response>{
+        return this.http.post<Response>(environment.baseAPIUrl + 'register', pdata);
+    }
+
+    getMaster(pdata:any){
+        return this.http.post<Response>(environment.baseAPIUrl + 'get/master/data', {});
+    }
+
+    updateUserInfo(pdata:any):Observable<Response>{
+        return this.http.post<Response>(environment.baseAPIUrl + 'update/userdata', pdata);
+    }
+
+    
+    UserRegistor(pdata:any):Observable<Response>{
+        return this.http.post<Response>(environment.baseAPIUrl + 'v1/user/register', pdata);
+    }
+
+    updateUserDetails(pdata:any){
+        return this.http.post<Response>(environment.baseAPIUrl + 'user/update_details', pdata);
+    }
+
+    callOpenAiToGetAns(pdata:any):Observable<Response>{
+        return this.http.post<Response>(environment.baseAPIUrl + 'get_openai_service', pdata);
+    }
+
     isAuthenticated(): boolean {
         const token = localStorage.getItem(this.userInfo);
         if (token) {

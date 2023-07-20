@@ -22,7 +22,12 @@ import { AssessmentModule } from './main/assesstment/assessment.module';
 import { MaterialModule } from 'Material.module';
 import { LoginComponent } from './main/login/login.component';
 import { LoginModule } from './main/login/login.module';
-import { MatSpinner } from '@angular/material/progress-spinner';
+import { MatProgressSpinnerModule, MatSpinner } from '@angular/material/progress-spinner';
+import { APP_BASE_HREF, HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { LineBreaksPipe } from './core/_pipes/textTransfer.pipe';
+import { ChatgptModule } from './main/chatGpt/chatgpt.module';
+import { SharedPipesModule } from './core/sharedpipes.module';
+
 
 @NgModule({
     declarations: [
@@ -33,7 +38,6 @@ import { MatSpinner } from '@angular/material/progress-spinner';
         BrowserAnimationsModule,
         HttpClientModule,
         AppRoutingModule,
-
         TranslateModule.forRoot(),
 
         // Fuse modules
@@ -49,12 +53,16 @@ import { MatSpinner } from '@angular/material/progress-spinner';
         SampleModule,
         AssessmentModule,
         MaterialModule,
-        LoginModule
+        LoginModule,
+        ChatgptModule,
+        SharedPipesModule
     ],
     bootstrap: [
         AppComponent
     ],
     providers: [
+        {provide:APP_BASE_HREF,useValue:'/web'},
+        //{provide: LocationStrategy,useClass:HashLocationStrategy}
     ],
     entryComponents:[
         MatSpinner

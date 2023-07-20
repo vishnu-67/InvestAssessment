@@ -5,10 +5,9 @@
 export const environment = {
     production: false,
     hmr: false,
-    baseAPIUrl: 'http://localhost:3000/',
-    security: {
-        allowedOrigins: 'https://dev.example.com'
-    }
+    //baseAPIUrl: 'http://localhost:8443/',
+    baseAPIUrl: 'https://dartexonconsulting.in/'
+    
 };
 
 /*

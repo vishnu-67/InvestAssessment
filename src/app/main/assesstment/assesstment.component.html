@@ -7,8 +7,10 @@
   </div>
   <div class="content">
     <div class="mat-card mat-elevation-z4 p-24 m-24">
-    <mat-vertical-stepper class="ng-tns-c382-699 mat-stepper-vertical ng-star-inserted" linear="true" #stepper>
-      <mat-step *ngFor="let step of sessionList; let i = index" [label]="step.header">
+    <mat-vertical-stepper class="ng-tns-c382-699 mat-stepper-vertical ng-star-inserted" linear="true" 
+    #stepper >
+    <ng-container *ngFor="let step of sessionList; let i = index">
+    <mat-step  [label]="step.header" [editable]="true">
       
         <h1>{{step.subHeader}}</h1>
 
@@ -47,6 +49,7 @@
           </div>
         </div>
       </mat-step>
+      </ng-container>
     </mat-vertical-stepper>
   </div>
 </div>

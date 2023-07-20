@@ -1,4 +1,4 @@
-<div id="login" class="inner-scroll" fxLayout="row" fxLayoutAlign="start">
+<div id="login" class="inner-scroll" fxLayout="row" fxLayoutAlign="start" >
     <div id="login-intro" fxFlex fxHide fxShow.gt-xs>
         <div class="logo" [@animate]="{ value: '*', params: { scale: '0.2' } }">
             <!-- <img src="../../../assets/images/logos/candidhire_logo.svg" /> -->
@@ -24,13 +24,13 @@
         fusePerfectScrollbar
         [@animate]="{ value: '*', params: { delay: '300ms', x: '100%' } }"
     >
-        <div id="login-form">
+        <div id="login-form" *ngIf="!inLogin && !viewChatGptRes">
             <div class="logo mt-0" fxHide.gt-xs>
                 <img src="../../../assets/images/logos/logo.svg" />
             </div>
 
             <div class="title" fxLayoutAlign="center center">
-                Login To User
+                Registor Now
             </div>
 
             <form name="loginForm"
@@ -78,10 +78,213 @@
                     aria-label="LOGIN"
                     [disabled]="loginForm.invalid"
                 >
-                    LOGIN
+                    Continue
+                </button>
+                
+            </form>
+        </div>
+
+        <div id="login-form" *ngIf="inLogin && !viewChatGptRes">
+            <div class="logo mt-0" fxHide.gt-xs>
+                <img src="../../../assets/images/logos/logo.svg" />
+            </div>
+
+            <div class="title" fxLayoutAlign="center center">
+                Contact Information
+            </div>
+
+            <form name="userDetailsForm"
+            [formGroup]="userDetailsForm"
+            novalidate
+            (ngSubmit)="onSaveUserInfo()">
+            <div *ngIf="isCompleteProfile == false">
+                <mat-form-field appearance="outline">
+                    <mat-label>Contact No</mat-label>
+                    <input
+                        matInput
+                        name="phoneNo"
+                        formControlName="phoneNo"
+                      
+                        autofocus
+                    />
+                    <mat-icon matSuffix class="secondary-text">phone</mat-icon>
+                    <!-- <mat-error
+                        *ngIf="userDetailsForm.get('phoneNo').hasError('required')"
+                    >
+                    Email id required
+                    </mat-error> -->
+                    <mat-error
+                        *ngIf="
+                            !userDetailsForm.get('phoneNo').hasError('required') &&
+                            userDetailsForm.get('phoneNo').hasError('pattern')
+                        "
+                    >
+                    Contact No is invalid
+                    </mat-error>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Organization</mat-label>
+                    <input
+                        matInput
+                        name="org"
+                        formControlName="org"
+                        autofocus
+                        maxlength="50"
+                    />
+                    <mat-icon matSuffix class="secondary-text">business</mat-icon>
+                    <!-- <mat-error
+                        *ngIf="userDetailsForm.get('org').hasError('required')"
+                    >
+                    Email id required
+                    </mat-error> -->
+                    <mat-error
+                        *ngIf="
+                            !userDetailsForm.get('org').hasError('required') &&
+                            userDetailsForm.get('org').hasError('pattern')
+                        "
+                    >
+                    Enter a valid Organization
+                    </mat-error>
+                </mat-form-field>
+                
+                <mat-form-field appearance="outline">
+                    <mat-label>Job Title</mat-label>
+                    <input
+                        matInput
+                        name="jobTitle"
+                        formControlName="jobTitle"
+                        autofocus
+                        maxlength="50"
+                    />
+                    <mat-icon matSuffix class="secondary-text">work_outline</mat-icon>
+                    <!-- <mat-error
+                        *ngIf="userDetailsForm.get('jobTitle').hasError('required')"
+                    >
+                    Email id required
+                    </mat-error> -->
+                    <mat-error
+                        *ngIf="
+                            !userDetailsForm.get('jobTitle').hasError('required') &&
+                            userDetailsForm.get('jobTitle').hasError('pattern')
+                        "
+                    >
+                    Enter a valid Job Title
+                    </mat-error>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Country</mat-label>
+                    <input
+                        matInput
+                        name="country"
+                        formControlName="country"
+                        autofocus
+                        maxlength="30"
+                    />
+                    <mat-icon matSuffix class="secondary-text">location_on</mat-icon>
+                    <!-- <mat-error
+                        *ngIf="userDetailsForm.get('country').hasError('required')"
+                    >
+                    Email id required
+                    </mat-error> -->
+                    <mat-error
+                        *ngIf="
+                            !userDetailsForm.get('country').hasError('required') &&
+                            userDetailsForm.get('country').hasError('pattern')
+                        "
+                    >
+                    Enter a valid Country
+                    </mat-error>
+                </mat-form-field>
+            </div>
+                <mat-form-field appearance="outline">
+                    <mat-label>Supply Chain Management Function</mat-label>
+                    <mat-select formControlName="supplyChain" multiple required (selectionChange)="onChangeSupplyChain()">
+                        <mat-option *ngFor="let item of supplyChainList" [value]="item.id">{{ item.name }}
+                        </mat-option>
+                    </mat-select>
+                    <!-- <mat-icon matSuffix class="secondary-text">precision_manufacturing</mat-icon> -->
+                    <mat-error
+                        *ngIf="userDetailsForm.get('supplyChain').hasError('required')"
+                    >
+                    Email id required
+                    </mat-error>
+                    <mat-error
+                        *ngIf="
+                            !userDetailsForm.get('supplyChain').hasError('required') &&
+                            userDetailsForm.get('supplyChain').hasError('pattern')
+                        "
+                    >
+                    Enter a valid Email
+                    </mat-error>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>component</mat-label>
+                    <mat-select formControlName="component" multiple required>
+                        <mat-option *ngFor="let item of matchCompoentList" [value]="item.id">{{ item.name }}
+                        </mat-option>
+                    </mat-select>
+                    <!-- <mat-icon matSuffix class="secondary-text">precision_manufacturing</mat-icon> -->
+                    <mat-error
+                        *ngIf="userDetailsForm.get('component').hasError('required')"
+                    >
+                    Email id required
+                    </mat-error>
+                    <mat-error
+                        *ngIf="
+                            !userDetailsForm.get('component').hasError('required') &&
+                            userDetailsForm.get('component').hasError('pattern')
+                        "
+                    >
+                    Enter a valid Email
+                    </mat-error>
+                </mat-form-field>
+
+                <!-- <button
+                    mat-raised-button
+                    color="accent"
+                    class="submit-button"
+                    aria-label="LOGIN"
+                    [disabled]="userDetailsForm.invalid"
+                >
+                    Continue
+                </button> -->
+                <div class="button-container">
+                    <button mat-raised-button class="left-button" aria-label="Left Button" (click)="onBack(1)">
+                      Back
+                    </button>
+                    <button mat-raised-button color="accent" class="right-button" aria-label="Right Button" [disabled]="userDetailsForm.invalid" >
+                        Continue
+                    </button>
+                  </div>
+            </form>
+        </div>
+
+        <div id="login-form" *ngIf="viewChatGptRes">
+            <div class="logo mt-0" fxHide.gt-xs>
+                <img src="assets/images/logos/logo.svg" />
+            </div>
+
+            <div class="title" fxLayoutAlign="center center">
+               <strong> Suggest solutions to your problem </strong>
+            </div>
+            <br><br>
+
+            <div style="font-weight: bold;" [innerHTML]="chatGptRes | lineBreaks"></div>
+            <form>
+            <button
+                    mat-raised-button
+                    class="submit-button"
+                    aria-label="LOGIN" (click)="onBack(2)">
+                    Back
                 </button>
             </form>
         </div>
+
     </div>
+
 </div>
+
 

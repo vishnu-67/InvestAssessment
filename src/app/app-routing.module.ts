@@ -3,20 +3,25 @@ import { Routes, RouterModule } from '@angular/router';
 import { AuthGuard } from './core/_guards/auth.guard';
 
 const appRoutes: Routes = [
+    // {
+    //     path: 'user',
+    //     canActivate: [AuthGuard],
+    //     loadChildren: () =>
+    //         import('./main/assesstment/assessment.module').then((m) => m.AssessmentModule),
+    // },
+    // {
+    //     path: 'auth',
+    //     loadChildren: () =>
+    //         import('./main/login/login.module').then((m) => m.LoginModule),
+    // },
     {
-        path: 'user',
-        canActivate: [AuthGuard],
+        path: 'customer',
         loadChildren: () =>
-            import('./main/assesstment/assessment.module').then((m) => m.AssessmentModule),
-    },
-    {
-        path: 'auth',
-        loadChildren: () =>
-            import('./main/login/login.module').then((m) => m.LoginModule),
+            import('./main/chatGpt/chatgpt.module').then((m) => m.ChatgptModule),
     },
     {
         path: '**',
-        redirectTo: 'auth/login'
+        redirectTo: 'customer/strategic'
     },
 ];
 
