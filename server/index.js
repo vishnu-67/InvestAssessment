@@ -4,7 +4,7 @@ const fs = require('fs');
 const app = express();
 const cors = require('cors');
 const pool = require('./mysqlConfig');
-const CHATGPT_API_KEY = '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';
+const CHATGPT_API_KEY = 'sk-&&&&&&&&&&&&&&&&&&&&&';
 const axios = require('axios');
 const path =require('path');
 
