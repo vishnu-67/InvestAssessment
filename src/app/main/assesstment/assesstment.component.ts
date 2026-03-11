@@ -42,6 +42,8 @@ export class AssesstmentComponent implements OnInit {
   }
 
   userEmailId:string;
+  activeTabIndex:number =0;
+
   constructor(private loginService:LoginService,private router:Router,
     private assessmentService:AssesstmentService, private spinnerService: SpinnerService ) { }
 
@@ -67,7 +69,7 @@ export class AssesstmentComponent implements OnInit {
         ansScore:0,
         formGroup:FormGroup,
       }
-      this.sessionList = this.assesstmentData.default.map((item,index)=>{
+      this.sessionList = this.assesstmentData.default.map((item:any,index:number)=>{
         this.totalScore +=item.totalScore;
         return {
           stepName:`Session${index+1}`,
@@ -136,7 +138,14 @@ export class AssesstmentComponent implements OnInit {
       })
     }
     console.log(this.sessionList[this.sessionList.length -1].formGroup.value)
+    
     this.spinnerService.hide()
+    // const currentStep = this.sessionList.find((step) => step.id === id);
+
+  //if (currentStep.formGroup.valid) {
+    this.activeTabIndex= id++;
+    // currentStep.completed = true;
+  //}
   }
 
   onSelect(stepId:number,qnId:number,optionId:number){

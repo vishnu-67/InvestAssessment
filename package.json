@@ -31,6 +31,7 @@
     "@angular/platform-browser": "9.1.11",
     "@angular/platform-browser-dynamic": "9.1.11",
     "@angular/router": "9.1.11",
+    "@ng-select/ng-select": "4.0.0",
     "@ngrx/effects": "9.2.0",
     "@ngrx/router-store": "9.2.0",
     "@ngrx/store": "9.2.0",
@@ -97,5 +98,9 @@
     "typescript": "3.7.5",
     "webpack-bundle-analyzer": "3.9.0"
   },
-  "browser": { "fs": false, "os": false, "path": false }
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false
+  }
 }

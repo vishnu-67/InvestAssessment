@@ -10,12 +10,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { CommonModule } from "@angular/common";
 import { MatInputModule } from '@angular/material/input';
 import { LoginComponent } from '../login/login.component';
+import { MatSelectModule } from '@angular/material/select';
+import { SharedPipesModule } from 'app/core/sharedpipes.module';
+//import { LineBreaksPipe } from 'app/core/_pipes/textTransfer.pipe';
 
 const routes = [
-  {
-    path: 'login',
-    component: LoginComponent
-  }
+  // {
+  //   path: 'login',
+  //   component: LoginComponent
+  // }
 ];
 
 @NgModule({
@@ -27,9 +30,11 @@ const routes = [
     MatRadioModule,
     MatFormFieldModule,
     MatButtonModule,
+    MatSelectModule,
     CommonModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+    SharedPipesModule
   ],
   exports: [
     LoginComponent

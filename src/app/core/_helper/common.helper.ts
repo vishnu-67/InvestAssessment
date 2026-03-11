@@ -1,3 +1,5 @@
+import { AbstractControl } from "@angular/forms"
+
 export class SharedLib {
   castToObject = function(inpVar: any, outVar: any): any {
     Object.keys(inpVar).forEach(key => {
@@ -237,4 +239,49 @@ export class SharedLib {
         return false;
     }
   }
+
+}
+
+export function rmBetweenWhiteSpaces(control: AbstractControl) {
+  if (control.dirty && control.value) {
+    if (!control.value.replace(/\s/g, '').length) {
+      control.setValue('');
+    }
+    else {
+      if ((control.value as string).indexOf(' ') >= 0) {
+        control.setValue(control.value.replace(/\s/g, ''));
+        //return  { cannotContainSpace: true }
+      }
+      else if ((control.value as string).indexOf('  ') >= 0) {
+        let trimSpace = control.value.replace(/\s+/g, ' ');
+        control.setValue(trimSpace.trim());
+      }
+    }
+
+    return control.value.replace(/\s/g, '').length == 0 ? { 'whitespace': true } : null
+
+  }
+
+  return null;
+
+}
+
+export function removeWhiteSpaces(control: AbstractControl) {
+  if (control.dirty && control.value && !control.value.replace(/\s/g, '').length) {
+    control.setValue('');
+    return control.value.replace(/\s/g, '').length == 0 ? { 'whitespace': true } : null
+  }
+  return null;
+}
+
+export function removeSpacesInText(control: AbstractControl) {
+  // if (control.dirty && control.value && !control.value.replace(/\s/g, '').length) {
+  //   control.setValue('');
+  //   return control.value.replace(/\s/g, '').length == 0 ? { 'whitespace': true } : null
+  // }
+  if (control.dirty && control.value && (control.value as string).match(/\s{2,}/)) {
+    let trimSpace = control.value.replace(/\s{2,}/g, ' ');
+    control.setValue(trimSpace);
+  }
+  return null;
 }

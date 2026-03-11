@@ -15,11 +15,6 @@ export class APIInterceptor implements HttpInterceptor {
 
         req = req.clone({
             url: parsedApiUrl,
-            setHeaders: {
-                'Content-Security-Policy': `frame-ancestors ${environment.security.allowedOrigins}`,
-                'X-Frame-Options': `ALLOW-FROM ${environment.security.allowedOrigins}`,
-                'X-XSS-Protection': '1; mode=block'
-            }
         });
 
         return next.handle(req);
